@@ -28,40 +28,40 @@ class ColorManagementMockupProperties(bpy.types.PropertyGroup):
     display_type                            : bpy.props.EnumProperty(name = "Display Type", items = [
                                                 ("apple_p3", "Apple Display P3", "apple_p3"),
                                                 ("aces", "ACES", "aces")
-                                            ])
+                                            ], options = {'SKIP_SAVE'})
     rendering_space                         : bpy.props.EnumProperty(name = "Rendering Space", items = [
                                                 ("acescg", "ACES - ACEScg", "acescg"),
-                                                ("rec709", "Rec. 709 / sRGB", "rec709")
-                                            ])
+                                                ("rec709", "Rec. 709", "rec709")
+                                            ], options = {'SKIP_SAVE'})
     view_transform                          : bpy.props.EnumProperty(name = "View Transform", items = [
                                                 ("srgb", "sRGB", "srgb"),
                                                 ("filmic", "Filmic", "filmic")
-                                            ])
+                                            ], options = {'SKIP_SAVE'})
     look                                    : bpy.props.EnumProperty(name = "Look", items = [
                                                 ("none", "None", "none"),
                                                 ("medium_contrast", "Medium Contrast", "medium_contrast")
-                                            ])
+                                            ], options = {'SKIP_SAVE'})
     input_8bit                              : bpy.props.EnumProperty(name = "8-bit Display Referred Files", items = [
                                                 ("aces_srgb_texture", "Utility - sRGB - Texture", "aces_srgb_texture"),
                                                 ("default_srgb_texture", "sRGB", "default_srgb_texture")
-                                            ])
+                                            ], options = {'SKIP_SAVE'})
     input_16bit                             : bpy.props.EnumProperty(name = "16-bit Display Referred Files", items = [
                                                 ("aces_srgb_texture", "Utility - sRGB - Texture", "aces_srgb_texture"),
                                                 ("default_srgb_texture", "sRGB", "default_srgb_texture")
-                                            ])
+                                            ], options = {'SKIP_SAVE'})
     input_log                               : bpy.props.EnumProperty(name = "Log Files", items = [
                                                 ("adx10", "Input - ADX - ADX10", "adx10"),
                                                 ("filmic", "Filmic Log", "filmic")
-                                            ])
+                                            ], options = {'SKIP_SAVE'})
     input_float                             : bpy.props.EnumProperty(name = "Float Files", items = [
                                                 ("ap0", "ACES - ACES2065-1", "ap0"),
                                                 ("rec709", "Rec. 709", "rec709")
-                                            ])
+                                            ], options = {'SKIP_SAVE'})
     output_space                            : bpy.props.EnumProperty(name = "Output Space", items = [
                                                 ("ap0", "ACES - ACES2065-1", "ap0"),
                                                 ("rec709", "Rec. 709", "rec709")
-                                            ])
-    apply_view_transform                    : bpy.props.BoolProperty(name = "Apply View Transform")
+                                            ], options = {'SKIP_SAVE'})
+    apply_view_transform                    : bpy.props.BoolProperty(name = "Apply View Transform", options = {'SKIP_SAVE'})
 
 
 ##############################################################################
